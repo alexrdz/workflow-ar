@@ -1,7 +1,7 @@
 import * as React from "react";
 import { useState } from "react";
 import { Router, Link } from "@reach/router";
-import {StyledAppBar, StyledMenuList} from './HeaderStyles';
+import { StyledAppBar, StyledMenuList } from "./HeaderStyles";
 import {
   ListItemIcon,
   ListItemText,
@@ -18,7 +18,6 @@ import {
   Menu as MenuIcon
 } from "@material-ui/icons";
 
-
 export const HeaderComponent: React.FunctionComponent = () => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
 
@@ -31,14 +30,14 @@ export const HeaderComponent: React.FunctionComponent = () => {
       <StyledAppBar position="static" color="default" className="app-bar">
         <Toolbar>
           <IconButton
-            className='menu-button'
+            className="menu-button"
             color="inherit"
             aria-label="Menu"
             onClick={() => toggleMenu()}
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" color="inherit" className={'styles.grow'}>
+          <Typography variant="h6" color="inherit" className={"styles.grow"}>
             MSI React Seed
           </Typography>
           <Button color="inherit">Login</Button>
